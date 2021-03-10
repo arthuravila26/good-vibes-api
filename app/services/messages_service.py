@@ -1,7 +1,6 @@
 import random
 
-from app.services.good_messages import good_messages
-from app.services.bad_messages import bad_messages
+from app.services.messages import good_messages, bad_messages
 
 
 class MessageService:

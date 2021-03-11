@@ -9,5 +9,5 @@ class Coordinator:
         self.app = FastAPI()
 
     def run(self):
-        uvicorn.run(app)
+        uvicorn.run(app, host='0.0.0.0')
         logger.info("Good Vibes Messages stoping...")

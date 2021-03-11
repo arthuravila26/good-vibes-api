@@ -4,6 +4,11 @@ from app.services.messages_service import MessageService
 app = FastAPI()
 
 
+@app.get('/', status_code=200)
+def get_goog_vibes():
+    return f'Welcome!'
+
+
 @app.get('/good', status_code=200)
 def get_goog_vibes():
     return MessageService().get_good_vibe_message()
